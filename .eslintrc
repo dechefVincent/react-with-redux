@@ -1,0 +1,28 @@
+{
+  "env": {
+    "browser": true,
+    "es2020": true,
+    "jest": true
+  },
+  "extends": ["plugin:react/recommended", "airbnb", "plugin:prettier/recommended", "prettier/react"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 11,
+    "sourceType": "module"
+  },
+  "plugins": ["prettier", "react"],
+  "rules": {
+    "prettier/prettier": "error",
+    "no-console": [
+      "error",
+      {
+        "allow": ["info", "error"]
+      }
+    ],
+    "import/prefer-default-export": "off",
+    "react/destructuring-assignment": "off",
+    "no-underscore-dangle": "off"
+  }
+}
